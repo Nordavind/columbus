@@ -285,7 +285,7 @@ p {
 }
 
 .plant-data-box-main {
-  max-width: 300px;
+  min-width: 300px;
 }
 
 .plant-title-box {
@@ -345,11 +345,16 @@ p {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding: 60px 10px;
   }
 
   .planta-img {
-    /* width: 400px; */
-    /* max-width: 300px; */
+    max-width: 100%;
+  }
+
+  .plant-data-box-main {
+    min-width: 70%;
+    margin: 0 35px;
   }
 
   .slider-plant-bottom-wrapper {
