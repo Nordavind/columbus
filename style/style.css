@@ -124,6 +124,33 @@ p {
   transition: background-color 0.3s ease-in-out;
 }
 
+/* whatsapp button */
+.whatsapp-button {
+	position: fixed;
+  z-index: 2;
+  bottom: 10px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  background-image: url('../img/whatsapp-ico.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wpwh-whatsapp:hover {
+  background-color: #128c7e;
+}
+
 /* Header */
 .hero-sec {
   background-image:
