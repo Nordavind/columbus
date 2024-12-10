@@ -128,8 +128,8 @@ p {
 .whatsapp-button {
 	position: fixed;
   z-index: 2;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
