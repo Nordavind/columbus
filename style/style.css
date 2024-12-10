@@ -60,6 +60,19 @@ p {
   line-height: 1.5rem;
 }
 
+a {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-light-color);
+}
+
 /* varios */
 .wrapper {
   max-width: 1257px !important;
@@ -83,15 +96,14 @@ p {
   color: var(--white-color);
 }
 
+.dark-color {
+  color: var(--dark-color);
+}
+
 .separator {
   width: 75px;
   height: 8px;
   background-color: var(--primary-color)
-}
-
-.borrame {
-  background-color: white;
-  height: 600px;
 }
 
 .btn-primary {
@@ -126,7 +138,7 @@ p {
 
 /* whatsapp button */
 .whatsapp-button {
-	position: fixed;
+  position: fixed;
   z-index: 2;
   bottom: 20px;
   right: 20px;
@@ -144,7 +156,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.3s ease;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .wpwh-whatsapp:hover {
@@ -253,7 +265,7 @@ p {
 #firstNameMobile,
 #secondNameMobile,
 #phoneMobile,
-#rentaMobile  {
+#rentaMobile {
   padding-left: 15px;
   height: 45px;
   border: 1px solid var(--primary-light-color);
@@ -399,7 +411,36 @@ p {
   height: 48px;
 }
 
-/* Medias queries */
+/* Map */
+.map-main {
+  background-color: white;
+}
+
+/* cta */
+.cta-main {
+  background-color: white;
+}
+
+/* footer */
+.footer-main {
+  background-color: var(--dark-color);
+}
+
+.logo-footer {
+  height: 145px;
+}
+
+.raudal-logo-footer {
+  width: 135px;
+  height: 38px;
+}
+
+.squella-logo-footer {
+  width: 170px;
+  height: 24px;
+}
+
+/* Media queries */
 @media (max-width: 959.98px) {
   .slider-plant-content-wrapper {
     width: 100%;
@@ -426,6 +467,10 @@ p {
 
   .slider-plant-bottom-wrapper {
     display: none;
+  }
+
+  .text-center-lg-c {
+    text-align: center;
   }
 }
 
@@ -459,6 +504,10 @@ p {
     font-size: 1.3rem;
     line-height: 1.5rem;
     text-align: center;
+  }
+
+  .btn-spec {
+    line-height: 1.3rem;
   }
 
   .text-center-sm {
