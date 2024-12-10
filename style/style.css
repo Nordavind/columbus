@@ -384,8 +384,12 @@ p {
     padding: 60px 10px;
   }
 
-  .planta-img {
+  .planta-img-wide {
     max-width: 100%;
+  }
+
+  .planta-img {
+    max-width: 80%;
   }
 
   .plant-data-box-main {
