@@ -199,7 +199,7 @@ a:hover {
 
 .nav-link-button-a {
   background-color: var(--primary-color);
-  padding: 12px 20px;
+  padding: 15px 25px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -225,6 +225,99 @@ a:hover {
 
 .nav-link:hover {
   color: var(--primary-light-color);
+}
+
+/* Navbar Mobile */
+#navbarMobile {
+  display: none;
+}
+
+.hamb-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.hamb-link i {
+  font-size: 20px;
+  color: white;
+}
+
+.hamb-link.active {
+  background-color: var(--primary-light-color);
+}
+
+.nav-mb-deploy {
+  position: absolute;
+  z-index: 2;
+  background-color: var(--dark-color);
+  width: 100%;
+  right: 0px;
+  top: 99px;
+  height: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-mb-deploy.open {
+  height: 335px;
+  padding: 40px 0;
+}
+
+.nav-mb-deploy ul,
+.nav-mb-deploy-fixed ul {
+  margin-left: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0 30px 0 30px;
+  text-align: center;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: -93px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--dark-green-color-b);
+  padding: 24px 24px;
+  display: none;
+  /* display: flex; */
+  justify-content: flex-end;
+  align-items: center;
+  transition: top 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.navbar-fixed.show {
+  top: 0 !important;
+}
+
+.nav-mb-deploy-fixed {
+  position: absolute;
+  z-index: 999;
+  background-color: var(--dark-color);
+  width: 100%;
+  right: 0px;
+  top: 99px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-mb-deploy-fixed.open {
+  height: 335px;
+  padding: 40px 0;
 }
 
 /* Header Form */
@@ -475,8 +568,16 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
-  #navbar-desktop {
+  #navbarDesktop {
     display: none;
+  }
+
+  #navbarMobile {
+    display: block;
+  }
+
+  .navbar-fixed {
+    display: flex;
   }
 }
 

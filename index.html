@@ -44,66 +44,94 @@
 </head>
 
 <body>
-  <header class="wrapper container-xl hero-sec p-0">
+  <header id="inicio" class="wrapper container-xl hero-sec p-0">
     <div class="container-fluid p-4 p-md-5">
       <div class="d-flex justify-content-between">
         <img class="logo-hero" src="./img/logo-c.svg" alt="Logo Columbus Park">
-        <nav id="navbar-desktop">
+        <div id="navbarDesktop">
           <ul class="navbar-list">
-            <li><a href="#" class="nav-link">Galería</a></li>
-            <li><a href="#" class="nav-link">Ubicación</a></li>
-            <li><a href="#" class="nav-link nav-link-button-a">Cotizar</a></li>
-            <li><a href="#" class="nav-link nav-link-button-b">Brochure</a></li>
+            <li><a href="#galeria" class="nav-link">Galería</a></li>
+            <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+            <li><a href="#cotizar" class="nav-link nav-link-button-a">Cotizar</a></li>
+            <li><a href="./doc/brochure-digital-columbus-park.pdf" target="_blank"
+                class="nav-link nav-link-button-b">Brochure</a></li>
           </ul>
-        </nav>
-      </div>
-    </div>
-    <div id="cotizar" class="container-fluid px-4 px-md-5 pb-0">
-      <div class="row g-0 g-md-5">
-        <div class="col-md-6 py-5">
-          <h1>ÚLTIMAS 10 UNIDADES</h1>
-          <div class="title-label-wrapper">
-            <h2 class="title-label">OPORTUNIDAD EXCLUSIVA</h2>
-          </div>
-          <h4 class="pt-3">¡CONTÁCTANOS!</h4>
-          <div class="separator my-4"></div>
-          <p class="text-center-sm">El proyecto inmobiliario más exitoso de los últimos años en el mejor sector de San
-            Bernardo está llegando a
-            su fin.</p>
-          <p class="text-center-sm">Con más del 90% de los departamentos adquiridos por familias e inversionistas que
-            eligieron un futuro de
-            calidad, el Edificio Columbus Park dispone de las últimas 10 unidades para las personas que no dejan pasar
-            las grandes oportunidades.</p>
-          <p class="text-center-sm">(*) Consulta por tipología y unidad disponible.</p>
         </div>
-        <div class="col-md-6 pb-5 d-none d-md-block">
-          <div class="form-wrapper p-5">
-            <h3 class="primary-color">Cotiza tu departamento</h3>
-            <form id="formDesktop" class="formulario-main pt-4">
-              <input type="email" id="emailDesktop" name="email" placeholder="Correo electrónico" required>
-              <input type="text" id="firstNameDesktop" name="first-name" placeholder="Nombre" required>
-              <input type="text" id="secondNameDesktop" name="second-name" placeholder="Apellido" required>
-              <input type="tel" id="phoneDesktop" name="phone" placeholder="+569 1234 5678" required>
-              <select id="rentaDesktop" name="renta" required>
-                <option value="" disabled selected>Selecciona</option>
-                <option value="menos-de-1000000">Menos de $1.000.000</option>
-                <option value="entre-1000000-y-1500000">Entre $1.000.000 y $1.500.000</option>
-                <option value="entre-1500000-y-2000000">Entre $1.500.000 y $2.000.000</option>
-                <option value="entre-2000000-y-2500000">Entre $2.000.000 y $2.500.000</option>
-                <option value="mas-de-2500000">Más de $2.500.000</option>
-                <option value="menos-de-10000000">Menos de $10.000.000</option>
-                <option value="entre-10000000-y-15000000">Entre $10.000.000 y $15.000.000</option>
-                <option value="entre-15000000-y-40000000">Entre $15.000.000 y $40.000.000</option>
-                <option value="entre-40000000-y-80000000">Entre $40.000.000 y $80.000.000</option>
-                <option value="mas-de-80000000">Más de $80.000.000</option>
-              </select>
-              <input type="submit" id="formSubmitDesktop" value="Enviar">
-            </form>
+        <div id="navbarMobile">
+          <button id="hambLink" class="hamb-link">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div id="navbarMbDeploy" class="nav-mb-deploy">
+            <ul>
+              <li><a href="#galeria-mb" class="nav-link">Galería</a></li>
+              <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+              <li><a href="#cotizar-mb" class="nav-link nav-link-button-a">Cotizar</a></li>
+              <li><a href="./doc/brochure-digital-columbus-park.pdf" target="_blank"
+                  class="nav-link nav-link-button-b">Brochure</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+      <div id="cotizar" class="container-fluid px-4 px-md-5 pb-0">
+        <div class="row g-0 g-md-5">
+          <div class="col-md-6 py-5">
+            <h1>ÚLTIMAS 10 UNIDADES</h1>
+            <div class="title-label-wrapper">
+              <h2 class="title-label">OPORTUNIDAD EXCLUSIVA</h2>
+            </div>
+            <h4 class="pt-3">¡CONTÁCTANOS!</h4>
+            <div class="separator my-4"></div>
+            <p class="text-center-sm">El proyecto inmobiliario más exitoso de los últimos años en el mejor sector de San
+              Bernardo está llegando a
+              su fin.</p>
+            <p class="text-center-sm">Con más del 90% de los departamentos adquiridos por familias e inversionistas que
+              eligieron un futuro de
+              calidad, el Edificio Columbus Park dispone de las últimas 10 unidades para las personas que no dejan pasar
+              las grandes oportunidades.</p>
+            <p class="text-center-sm">(*) Consulta por tipología y unidad disponible.</p>
+          </div>
+          <div class="col-md-6 pb-5 d-none d-md-block">
+            <div class="form-wrapper p-5">
+              <h3 class="primary-color">Cotiza tu departamento</h3>
+              <form id="formDesktop" class="formulario-main pt-4">
+                <input type="email" id="emailDesktop" name="email" placeholder="Correo electrónico" required>
+                <input type="text" id="firstNameDesktop" name="first-name" placeholder="Nombre" required>
+                <input type="text" id="secondNameDesktop" name="second-name" placeholder="Apellido" required>
+                <input type="tel" id="phoneDesktop" name="phone" placeholder="+569 1234 5678" required>
+                <select id="rentaDesktop" name="renta" required>
+                  <option value="" disabled selected>Selecciona</option>
+                  <option value="menos-de-1000000">Menos de $1.000.000</option>
+                  <option value="entre-1000000-y-1500000">Entre $1.000.000 y $1.500.000</option>
+                  <option value="entre-1500000-y-2000000">Entre $1.500.000 y $2.000.000</option>
+                  <option value="entre-2000000-y-2500000">Entre $2.000.000 y $2.500.000</option>
+                  <option value="mas-de-2500000">Más de $2.500.000</option>
+                  <option value="menos-de-10000000">Menos de $10.000.000</option>
+                  <option value="entre-10000000-y-15000000">Entre $10.000.000 y $15.000.000</option>
+                  <option value="entre-15000000-y-40000000">Entre $15.000.000 y $40.000.000</option>
+                  <option value="entre-40000000-y-80000000">Entre $40.000.000 y $80.000.000</option>
+                  <option value="mas-de-80000000">Más de $80.000.000</option>
+                </select>
+                <input type="submit" id="formSubmitDesktop" value="Enviar">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
   </header>
+  <div class="navbar-fixed">
+    <button id="hambLinkFixed" class="hamb-link">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div id="navbarMbDeployFixed" class="nav-mb-deploy-fixed">
+      <ul>
+        <li><a href="#galeria-mb" class="nav-link">Galería</a></li>
+        <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+        <li><a href="#cotizar-mb" class="nav-link nav-link-button-a">Cotizar</a></li>
+        <li><a href="./doc/brochure-digital-columbus-park.pdf" target="_blank"
+            class="nav-link nav-link-button-b">Brochure</a></li>
+      </ul>
+    </div>
+  </div>
   <section id="cotizar-mb" class="wrapper container-xl p-0 d-block d-md-none">
     <div class="container-fluid px-4 py-5">
       <div class="py-4">
@@ -244,10 +272,12 @@
               <div class="square-ornament"></div>
             </div>
             <div class="h-100 d-flex flex-column justify-content-center">
-              <div><iframe width="100%" height="315" src="https://www.youtube.com/embed/MLpWrANjFbI?si=ELuZbt4gfZu9Sp49"
+              <div>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/MLpWrANjFbI?si=ELuZbt4gfZu9Sp49"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -646,7 +676,7 @@
       </button>
     </div>
   </section>
-  <section class="wrapper container-xl p-0 map-main">
+  <section id="ubicacion" class="wrapper container-xl p-0 map-main">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.0873632815583!2d-70.70660935046173!3d-33.58907934132927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d95735697519%3A0xe8f1f3141be8b625!2sAv%20Col%C3%B3n%20Sur%20765%2C%208050000%20San%20Bernardo%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1733847415214!5m2!1ses!2scl"
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
