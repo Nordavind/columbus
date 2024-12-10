@@ -94,6 +94,36 @@ p {
   height: 600px;
 }
 
+.btn-primary {
+  padding: 20px 60px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.03rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light-color);
+}
+
+.btn-primary-mb {
+  padding: 20px 60px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 0.9375rem;
+  letter-spacing: 0.03rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* Header */
 .hero-sec {
   background-image:
@@ -187,11 +217,16 @@ p {
   outline: 1px solid var(--primary-light-color);
 }
 
-#email,
-#firstname,
-#secondname,
-#phone,
-#renta {
+#emailDesktop,
+#firstNameDesktop,
+#secondNameDesktop,
+#phoneDesktop,
+#rentaDesktop,
+#emailMobile,
+#firstNameMobile,
+#secondNameMobile,
+#phoneMobile,
+#rentaMobile  {
   padding-left: 15px;
   height: 45px;
   border: 1px solid var(--primary-light-color);
@@ -199,7 +234,8 @@ p {
   width: 100%;
 }
 
-#form-submit {
+#formSubmitDesktop,
+#formSubmitMobile {
   font-weight: 600;
   font-size: 0.9375rem;
   line-height: 0.9375rem;
@@ -216,7 +252,7 @@ p {
   margin: auto;
 }
 
-#form-submit:hover {
+#formSubmitDesktop:hover {
   color: var(--light-yellow-color);
   background: var(--primary-light-color);
 }
@@ -341,7 +377,7 @@ p {
   .slider-plant-content-wrapper {
     width: 100%;
     height: auto;
-    gap: 40px;
+    gap: 60px;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;

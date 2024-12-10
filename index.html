@@ -79,12 +79,12 @@
         <div class="col-md-6 pb-5 d-none d-md-block">
           <div class="form-wrapper p-5">
             <h3 class="primary-color">Cotiza tu departamento</h3>
-            <form id="customForm" class="formulario-main pt-4">
-              <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-              <input type="text" id="firstname" name="first-name" placeholder="Nombre" required>
-              <input type="text" id="secondname" name="second-name" placeholder="Apellido" required>
-              <input type="tel" id="phone" name="phone" placeholder="+569 1234 5678" required>
-              <select id="renta" name="renta" required>
+            <form id="formDesktop" class="formulario-main pt-4">
+              <input type="email" id="emailDesktop" name="email" placeholder="Correo electrónico" required>
+              <input type="text" id="firstNameDesktop" name="first-name" placeholder="Nombre" required>
+              <input type="text" id="secondNameDesktop" name="second-name" placeholder="Apellido" required>
+              <input type="tel" id="phoneDesktop" name="phone" placeholder="+569 1234 5678" required>
+              <select id="rentaDesktop" name="renta" required>
                 <option value="" disabled selected>Selecciona</option>
                 <option value="menos-de-1000000">Menos de $1.000.000</option>
                 <option value="entre-1000000-y-1500000">Entre $1.000.000 y $1.500.000</option>
@@ -97,7 +97,7 @@
                 <option value="entre-40000000-y-80000000">Entre $40.000.000 y $80.000.000</option>
                 <option value="mas-de-80000000">Más de $80.000.000</option>
               </select>
-              <input type="submit" id="form-submit" value="Enviar">
+              <input type="submit" id="formSubmitDesktop" value="Enviar">
             </form>
           </div>
         </div>
@@ -109,12 +109,12 @@
       <div class="py-4">
         <div class="form-wrapper">
           <h3 class="primary-color">Cotiza tu departamento</h3>
-          <form id="customForm" class="formulario-main pt-4">
-            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-            <input type="text" id="firstname" name="first-name" placeholder="Nombre" required>
-            <input type="text" id="secondname" name="second-name" placeholder="Apellido" required>
-            <input type="tel" id="phone" name="phone" placeholder="+569 1234 5678" required>
-            <select id="renta" name="renta" required>
+          <form id="formMobile" class="formulario-main pt-4">
+            <input type="email" id="emailMobile" name="email" placeholder="Correo electrónico" required>
+            <input type="text" id="firstNameMobile" name="first-name" placeholder="Nombre" required>
+            <input type="text" id="secondNameMobile" name="second-name" placeholder="Apellido" required>
+            <input type="tel" id="phoneMobile" name="phone" placeholder="+569 1234 5678" required>
+            <select id="rentaMobile" name="renta" required>
               <option value="" disabled selected>Selecciona</option>
               <option value="menos-de-1000000">Menos de $1.000.000</option>
               <option value="entre-1000000-y-1500000">Entre $1.000.000 y $1.500.000</option>
@@ -127,7 +127,7 @@
               <option value="entre-40000000-y-80000000">Entre $40.000.000 y $80.000.000</option>
               <option value="mas-de-80000000">Más de $80.000.000</option>
             </select>
-            <input type="submit" id="form-submit" value="Enviar">
+            <input type="submit" id="formSubmitMobile" value="Enviar">
           </form>
         </div>
       </div>
@@ -155,7 +155,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
   </section>
   <section id="galeria-mb" class="wrapper container-xl p-0 d-block d-sm-none">
     <div id="gal-component-mb" class="carousel slide">
@@ -189,7 +188,6 @@
       </button>
     </div>
   </section>
-
   <section class="wrapper container-xl p-0 characteristic-main">
     <div class="container-fluid p-4 p-md-5">
       <div class="row row g-0 g-md-5 py-4">
@@ -256,69 +254,387 @@
       </div>
     </div>
   </section>
-
   <section class="wrapper container-xl plant-slider-main">
     <div id="gal-plantas" class="carousel slide">
       <div class="carousel-inner">
-
-
         <div class="carousel-item active">
-
-
-            
-            <div class="slider-plant-content-wrapper">
-              <img class="planta-img" src="./img/planta-c.webp" alt="planta a">
-              <div class="plant-data-box-main">
-                <div class="plant-title-box p-4">
-                  <h3 class="white-color m-0">TIPO A</h3>
+          <div class="slider-plant-content-wrapper">
+            <img class="planta-img" src="./img/planta-a.webp" alt="planta a">
+            <div class="plant-data-box-main">
+              <div class="plant-title-box p-4">
+                <h3 class="white-color m-0">TIPO A</h3>
+              </div>
+              <div class="plant-data-box p-4">
+                <div class="pb-3">
+                  <h5 class="primary-color">3 DORMITORIOS</h5>
+                  <h5 class="primary-color">2 BAÑOS + TERRAZA</h5>
                 </div>
-                <div class="plant-data-box p-4">
-                  <div class="pb-3">
-                    <h5 class="primary-color">3 DORMITORIOS</h5>
-                    <h5 class="primary-color">2 BAÑOS + TERRAZA</h5>
-                  </div>
-                  <div>
-                    <p class="plant-data-title mb-2">SUPERFICIE</p>
-                    <div class="d-flex gap-3 pb-3">
-                      <div>
-                        <p class="plant-data-text my-2">ÚTIL</p>
-                        <p class="plant-data-text my-2">TERRAZA</p>
-                        <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
-                      </div>
-                      <div>
-                        <p class="plant-data-text my-2">70,69 M2</p>
-                        <p class="plant-data-text my-2">8,56 M2</p>
-                        <p class="plant-data-text plant-data-text-bold my-2">79,25 M2</p>
-                      </div>
+                <div>
+                  <p class="plant-data-title mb-2">SUPERFICIE</p>
+                  <div class="d-flex gap-3 pb-3">
+                    <div>
+                      <p class="plant-data-text my-2">ÚTIL</p>
+                      <p class="plant-data-text my-2">TERRAZA</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
                     </div>
                     <div>
-                      <p class="plant-data-title mb-3">ORIENTACIÓN</p>
-                      <div>
-                        <p class="plant-data-text my-2">SUR-PONIENTE-ORIENTE</p>
-                      </div>
+                      <p class="plant-data-text my-2">70,69 M2</p>
+                      <p class="plant-data-text my-2">8,56 M2</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">79,25 M2</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="plant-data-title mb-3">ORIENTACIÓN</p>
+                    <div>
+                      <p class="plant-data-text my-2">SUR-PONIENTE-ORIENTE</p>
                     </div>
                   </div>
                 </div>
+                <div>
+                  <button class="btn-primary mt-3 d-none d-md-block" onclick="location.href='#cotizar'">COTIZAR</button>
+                  <button class="btn-primary-mb mt-3 d-block d-md-none"
+                    onclick="location.href='#cotizar-mb'">COTIZAR</button>
+                </div>
               </div>
             </div>
-
-            <div class="slider-plant-bottom-wrapper px-5 px-md-5">
-              <div class="disclamer-slider-text-wrapper">
-                <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
-                  cien por cien del área existente
-                  entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
-                  perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
-                  compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
-                  las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
-                  cien por ciento del ancho de las vigas del antepecho que las forman.</p>
-              </div>
-              <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
+          <div class="slider-plant-bottom-wrapper px-5 px-md-5">
+            <div class="disclamer-slider-text-wrapper">
+              <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
+                cien por cien del área existente
+                entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
+                perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
+                compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
+                las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
+                cien por ciento del ancho de las vigas del antepecho que las forman.</p>
             </div>
-
-
+            <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
         </div>
-
-
+        <div class="carousel-item">
+          <div class="slider-plant-content-wrapper">
+            <img class="planta-img" src="./img/planta-b1.webp" alt="planta b1">
+            <div class="plant-data-box-main">
+              <div class="plant-title-box p-4">
+                <h3 class="white-color m-0">TIPO B1</h3>
+              </div>
+              <div class="plant-data-box p-4">
+                <div class="pb-3">
+                  <h5 class="primary-color">2 DORMITORIOS</h5>
+                  <h5 class="primary-color">2 BAÑOS + TERRAZA</h5>
+                </div>
+                <div>
+                  <p class="plant-data-title mb-2">SUPERFICIE</p>
+                  <div class="d-flex gap-3 pb-3">
+                    <div>
+                      <p class="plant-data-text my-2">ÚTIL</p>
+                      <p class="plant-data-text my-2">TERRAZA</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
+                    </div>
+                    <div>
+                      <p class="plant-data-text my-2">56,6 M2</p>
+                      <p class="plant-data-text my-2">12,01 M2</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">68,61 M2</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="plant-data-title mb-3">ORIENTACIÓN</p>
+                    <div>
+                      <p class="plant-data-text my-2">NOR-PONIENTE</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn-primary mt-3 d-none d-md-block" onclick="location.href='#cotizar'">COTIZAR</button>
+                  <button class="btn-primary-mb mt-3 d-block d-md-none"
+                    onclick="location.href='#cotizar-mb'">COTIZAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-plant-bottom-wrapper px-5 px-md-5">
+            <div class="disclamer-slider-text-wrapper">
+              <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
+                cien por cien del área existente
+                entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
+                perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
+                compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
+                las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
+                cien por ciento del ancho de las vigas del antepecho que las forman.</p>
+            </div>
+            <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-plant-content-wrapper">
+            <img class="planta-img" src="./img/planta-b2.webp" alt="planta b2">
+            <div class="plant-data-box-main">
+              <div class="plant-title-box p-4">
+                <h3 class="white-color m-0">TIPO B2</h3>
+              </div>
+              <div class="plant-data-box p-4">
+                <div class="pb-3">
+                  <h5 class="primary-color">2 DORMITORIOS</h5>
+                  <h5 class="primary-color">2 BAÑOS + TERRAZA</h5>
+                </div>
+                <div>
+                  <p class="plant-data-title mb-2">SUPERFICIE</p>
+                  <div class="d-flex gap-3 pb-3">
+                    <div>
+                      <p class="plant-data-text my-2">ÚTIL</p>
+                      <p class="plant-data-text my-2">TERRAZA</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
+                    </div>
+                    <div>
+                      <p class="plant-data-text my-2">56,6 M2</p>
+                      <p class="plant-data-text my-2">12,01 M2</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">68,61 M2</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="plant-data-title mb-3">ORIENTACIÓN</p>
+                    <div>
+                      <p class="plant-data-text my-2">NOR-ORIENTE</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn-primary mt-3 d-none d-md-block" onclick="location.href='#cotizar'">COTIZAR</button>
+                  <button class="btn-primary-mb mt-3 d-block d-md-none"
+                    onclick="location.href='#cotizar-mb'">COTIZAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-plant-bottom-wrapper px-5 px-md-5">
+            <div class="disclamer-slider-text-wrapper">
+              <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
+                cien por cien del área existente
+                entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
+                perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
+                compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
+                las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
+                cien por ciento del ancho de las vigas del antepecho que las forman.</p>
+            </div>
+            <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-plant-content-wrapper">
+            <img class="planta-img" src="./img/planta-c.webp" alt="planta c">
+            <div class="plant-data-box-main">
+              <div class="plant-title-box p-4">
+                <h3 class="white-color m-0">TIPO C</h3>
+              </div>
+              <div class="plant-data-box p-4">
+                <div class="pb-3">
+                  <h5 class="primary-color">2 DORMITORIOS</h5>
+                  <h5 class="primary-color">2 BAÑOS + TERRAZA</h5>
+                </div>
+                <div>
+                  <p class="plant-data-title mb-2">SUPERFICIE</p>
+                  <div class="d-flex gap-3 pb-3">
+                    <div>
+                      <p class="plant-data-text my-2">ÚTIL</p>
+                      <p class="plant-data-text my-2">TERRAZA</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
+                    </div>
+                    <div>
+                      <p class="plant-data-text my-2">49,63 M2</p>
+                      <p class="plant-data-text my-2">5,47 M2</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">55,1 M2</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="plant-data-title mb-3">ORIENTACIÓN</p>
+                    <div>
+                      <p class="plant-data-text my-2">PONIENTE</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn-primary mt-3 d-none d-md-block" onclick="location.href='#cotizar'">COTIZAR</button>
+                  <button class="btn-primary-mb mt-3 d-block d-md-none"
+                    onclick="location.href='#cotizar-mb'">COTIZAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-plant-bottom-wrapper px-5 px-md-5">
+            <div class="disclamer-slider-text-wrapper">
+              <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
+                cien por cien del área existente
+                entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
+                perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
+                compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
+                las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
+                cien por ciento del ancho de las vigas del antepecho que las forman.</p>
+            </div>
+            <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-plant-content-wrapper">
+            <img class="planta-img" src="./img/planta-d2.webp" alt="planta d2">
+            <div class="plant-data-box-main">
+              <div class="plant-title-box p-4">
+                <h3 class="white-color m-0">TIPO D2</h3>
+              </div>
+              <div class="plant-data-box p-4">
+                <div class="pb-3">
+                  <h5 class="primary-color">2 DORMITORIOS</h5>
+                  <h5 class="primary-color">2 BAÑOS + TERRAZA</h5>
+                </div>
+                <div>
+                  <p class="plant-data-title mb-2">SUPERFICIE</p>
+                  <div class="d-flex gap-3 pb-3">
+                    <div>
+                      <p class="plant-data-text my-2">ÚTIL</p>
+                      <p class="plant-data-text my-2">TERRAZA</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
+                    </div>
+                    <div>
+                      <p class="plant-data-text my-2">46,47 M2</p>
+                      <p class="plant-data-text my-2">8,39 M2</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">54,86 M2</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="plant-data-title mb-3">ORIENTACIÓN</p>
+                    <div>
+                      <p class="plant-data-text my-2">PONIENTE</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn-primary mt-3 d-none d-md-block" onclick="location.href='#cotizar'">COTIZAR</button>
+                  <button class="btn-primary-mb mt-3 d-block d-md-none"
+                    onclick="location.href='#cotizar-mb'">COTIZAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-plant-bottom-wrapper px-5 px-md-5">
+            <div class="disclamer-slider-text-wrapper">
+              <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
+                cien por cien del área existente
+                entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
+                perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
+                compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
+                las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
+                cien por ciento del ancho de las vigas del antepecho que las forman.</p>
+            </div>
+            <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-plant-content-wrapper">
+            <img class="planta-img" src="./img/planta-f1.webp" alt="planta f1">
+            <div class="plant-data-box-main">
+              <div class="plant-title-box p-4">
+                <h3 class="white-color m-0">TIPO F1</h3>
+              </div>
+              <div class="plant-data-box p-4">
+                <div class="pb-3">
+                  <h5 class="primary-color">1 DORMITORIOS</h5>
+                  <h5 class="primary-color">1 BAÑOS + TERRAZA</h5>
+                </div>
+                <div>
+                  <p class="plant-data-title mb-2">SUPERFICIE</p>
+                  <div class="d-flex gap-3 pb-3">
+                    <div>
+                      <p class="plant-data-text my-2">ÚTIL</p>
+                      <p class="plant-data-text my-2">TERRAZA</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
+                    </div>
+                    <div>
+                      <p class="plant-data-text my-2">31,8 M2</p>
+                      <p class="plant-data-text my-2">5,96 M2</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">37,76 M2</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="plant-data-title mb-3">ORIENTACIÓN</p>
+                    <div>
+                      <p class="plant-data-text my-2">ORIENTE</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn-primary mt-3 d-none d-md-block" onclick="location.href='#cotizar'">COTIZAR</button>
+                  <button class="btn-primary-mb mt-3 d-block d-md-none"
+                    onclick="location.href='#cotizar-mb'">COTIZAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-plant-bottom-wrapper px-5 px-md-5">
+            <div class="disclamer-slider-text-wrapper">
+              <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
+                cien por cien del área existente
+                entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
+                perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
+                compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
+                las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
+                cien por ciento del ancho de las vigas del antepecho que las forman.</p>
+            </div>
+            <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slider-plant-content-wrapper">
+            <img class="planta-img" src="./img/planta-f2.webp" alt="planta f2">
+            <div class="plant-data-box-main">
+              <div class="plant-title-box p-4">
+                <h3 class="white-color m-0">TIPO F2</h3>
+              </div>
+              <div class="plant-data-box p-4">
+                <div class="pb-3">
+                  <h5 class="primary-color">1 DORMITORIOS</h5>
+                  <h5 class="primary-color">1 BAÑOS + TERRAZA</h5>
+                </div>
+                <div>
+                  <p class="plant-data-title mb-2">SUPERFICIE</p>
+                  <div class="d-flex gap-3 pb-3">
+                    <div>
+                      <p class="plant-data-text my-2">ÚTIL</p>
+                      <p class="plant-data-text my-2">TERRAZA</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">TOTAL</p>
+                    </div>
+                    <div>
+                      <p class="plant-data-text my-2">31,76 M2</p>
+                      <p class="plant-data-text my-2">5,56 M2</p>
+                      <p class="plant-data-text plant-data-text-bold my-2">37,32 M2</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="plant-data-title mb-3">ORIENTACIÓN</p>
+                    <div>
+                      <p class="plant-data-text my-2">ORIENTE</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn-primary mt-3 d-none d-md-block" onclick="location.href='#cotizar'">COTIZAR</button>
+                  <button class="btn-primary-mb mt-3 d-block d-md-none"
+                    onclick="location.href='#cotizar-mb'">COTIZAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-plant-bottom-wrapper px-5 px-md-5">
+            <div class="disclamer-slider-text-wrapper">
+              <p class="disclamer-slider-text">*La superficie total del departamento se determina contabilizando el
+                cien por cien del área existente
+                entre los muros perimetrales, considerando tabiques, shaft, loggias y la totalidad de los muros
+                perimetrales, tanto al exterior como a los espacios comunes; sólo cuando un muro perimetral es
+                compartido con otro departamento se considera la medida al eje del muro entre ambos. La superficie de
+                las terrazas cosidera el cien por ciento del área entre los muros perimetrales de la terraza más el
+                cien por ciento del ancho de las vigas del antepecho que las forman.</p>
+            </div>
+            <img class="raudal-logo-slider" src="./img/raudal-logo-170-48.webp" alt="Raudal Logo">
+          </div>
+        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#gal-plantas" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
